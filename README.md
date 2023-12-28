@@ -27,6 +27,11 @@ const imageUrl = "https://images.unsplash.com/photo-1462331940025-496dfbfc7564"
 const result = PictureManager.openPictureViewer(imageUrl);
 ```
 
+## API
+
+For now, the only function supported is `openPictureViewer(url: string)`.
+More to come!
+
 ## Roadmap
 
 - **Custom Android Implementation:** Replace PhotoView with a custom implementation, as PhotoView is no longer maintained.
