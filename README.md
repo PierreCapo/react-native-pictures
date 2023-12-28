@@ -1,6 +1,8 @@
 # React-Native-Pictures
 
-<video src="docs/demo.mp4" controls title="Title"></video>
+<div align="center">
+  <video src="https://github.com/PierreCapo/react-native-pictures/assets/26744253/515ab32a-f0a2-4771-ad07-f494eee4e78d"></video>
+</div>
 
 React Native Pictures is a comprehensive toolkit for handling images within your React Native application. Our goal is to provide a modern, efficient codebase using Swift and Kotlin, offering common solutions for image-related features in your React Native app.
 
