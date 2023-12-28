@@ -16,6 +16,7 @@ class PictureViewerViewController: UIViewController {
         
     init(imageUrl: URL) {
         self.imageUrl = imageUrl
+        imageView.alpha = 0
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -108,6 +109,10 @@ class PictureViewerViewController: UIViewController {
         }
         Task { @MainActor in
             self.imageView.image = image
+            
+            UIView.animate(withDuration: 0.2) { [weak self] in
+                self?.imageView.alpha = 1
+            }
         }
     }
 }
