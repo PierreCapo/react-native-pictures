@@ -17,6 +17,6 @@ const Pictures = NativeModules.Pictures
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Pictures.multiply(a, b);
+export function openPictureViewer(url: string): Promise<void> {
+  return Pictures.openPictureViewer(url);
 }
