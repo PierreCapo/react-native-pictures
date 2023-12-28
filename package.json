@@ -1,6 +1,6 @@
 {
   "name": "react-native-pictures",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Toolset for handling pictures within your react-native app",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
