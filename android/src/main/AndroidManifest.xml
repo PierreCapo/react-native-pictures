@@ -1,7 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.pictures">
-
-  <application>
-    <activity android:name=".PictureViewerActivity" />
-  </application>
+          package="com.pictures">
 </manifest>

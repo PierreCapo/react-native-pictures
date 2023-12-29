@@ -16,26 +16,36 @@ npm install react-native-pictures
 
 ## Usage
 
-Here's a simple example to showcase how you can use React Native Pictures in your app:
+Here's a simple example to showcase how you can use React Native Pictures in your app.
+It's recommended that the viewer takes the entire available space:
 
 ```js
-import PictureManager from 'react-native-pictures';
+import {PictureViewer} from 'react-native-pictures';
 
 // ...
 
-const imageUrl = "https://images.unsplash.com/photo-1462331940025-496dfbfc7564"
-const result = PictureManager.openPictureViewer(imageUrl);
+<PictureViewer
+  imageUrl={"https://w.wallhaven.cc/full/r4/wallhaven-r42m09.jpg"}
+  style={{
+    width: "100%",
+    height: "100%"
+  }}
+/>
 ```
 
 ## API
 
-For now, the only function supported is `openPictureViewer(url: string)`.
-More to come!
+### PictureViewer
+
+| Props | Type | Description |
+| --- | --- | --- |
+| imageUrl | string | The remote image url you want to see |
+| style | ViewStyle | Style of PictureViewer.
 
 ## Roadmap
 
+- **More controls:** Add ability to display local images, gesture event listeners, etc.
 - **Custom Android Implementation:** Replace PhotoView with a custom implementation, as PhotoView is no longer maintained.
-- **Native Component Integration:** Transition from Activity/UIViewController to View/UIView for seamless embedding within React Native screens. This will allow greater flexibility for consumer applications.
 - **Image Cropping Feature:** Implement a cropping feature to leverage the pan and zoom capabilities, making it easier to integrate an image cropping screen.
 
 

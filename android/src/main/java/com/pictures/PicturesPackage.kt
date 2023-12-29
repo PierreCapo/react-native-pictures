@@ -8,10 +8,10 @@ import com.facebook.react.uimanager.ViewManager
 
 class PicturesPackage : ReactPackage {
   override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
-    return listOf(PicturesModule(reactContext))
+    return emptyList()
   }
 
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
-    return emptyList()
+    return listOf(PicturesViewManager())
   }
 }
