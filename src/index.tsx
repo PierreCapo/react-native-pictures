@@ -1,4 +1,9 @@
-import { NativeModules, Platform } from 'react-native';
+import {
+  requireNativeComponent,
+  UIManager,
+  Platform,
+  type ViewStyle,
+} from 'react-native';
 
 const LINKING_ERROR =
   `The package 'react-native-pictures' doesn't seem to be linked. Make sure: \n\n` +
@@ -6,17 +11,16 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const Pictures = NativeModules.Pictures
-  ? NativeModules.Pictures
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
+type PicturesProps = {
+  style?: ViewStyle;
+  imageUrl: string;
+};
 
-export function openPictureViewer(url: string): Promise<void> {
-  return Pictures.openPictureViewer(url);
-}
+const ComponentName = 'PicturesView';
+
+export const PicturesView =
+  UIManager.getViewManagerConfig(ComponentName) != null
+    ? requireNativeComponent<PicturesProps>(ComponentName)
+    : () => {
+        throw new Error(LINKING_ERROR);
+      };
