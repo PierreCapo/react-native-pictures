@@ -20,11 +20,11 @@ Here's a simple example to showcase how you can use React Native Pictures in you
 It's recommended that the viewer takes the entire available space:
 
 ```js
-import {PictureViewer} from 'react-native-pictures';
+import {PicturesViewer} from 'react-native-pictures';
 
 // ...
 
-<PictureViewer
+<PicturesViewer
   imageUrl={"https://w.wallhaven.cc/full/r4/wallhaven-r42m09.jpg"}
   style={{
     width: "100%",
@@ -35,7 +35,7 @@ import {PictureViewer} from 'react-native-pictures';
 
 ## API
 
-### PictureViewer
+### PicturesViewer
 
 | Props | Type | Description |
 | --- | --- | --- |
