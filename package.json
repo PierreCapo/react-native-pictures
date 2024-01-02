@@ -1,6 +1,6 @@
 {
   "name": "react-native-pictures",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "React Native Pictures is a comprehensive toolkit for handling images within your React Native application. Our goal is to provide a modern, efficient codebase using Swift and Kotlin, offering common solutions for image-related features in your React Native app.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
