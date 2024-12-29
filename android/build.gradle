@@ -90,6 +90,6 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'com.github.chrisbanes:PhotoView:565505d5cb84f5977771b5d2ccb7726338e77224'
+  implementation 'com.github.Baseflow:PhotoView:565505d5cb84f5977771b5d2ccb7726338e77224'
 }
 
